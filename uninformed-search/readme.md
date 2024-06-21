@@ -46,3 +46,43 @@ Here's a step-by-step explanation of how BFS works:
 -----------------
 
 The implementation of BFS can be found in the `Breadth-first-search.py` file in this repository. The implementation uses a queue data structure to hold the nodes to be visited and a set to keep track of visited nodes.
+
+**Depth-First Search (DFS) Algorithm**
+=====================================
+
+### What is DFS?
+
+Depth-First Search (DFS) is a graph traversal algorithm that explores a graph or a tree by visiting a node and then visiting all of its neighbors before backtracking. It is a popular algorithm used to search for a path between two nodes in an unweighted graph or a tree.
+
+### How DFS Works
+
+Here's a step-by-step explanation of how DFS works:
+
+1. **Choose a starting node**: Select a node in the graph as the starting point for the search.
+2. **Mark the starting node as visited**: Mark the starting node as visited to avoid revisiting it.
+3. **Explore the node's neighbors**: Explore the neighbors of the starting node and mark them as visited.
+4. **Recursively explore the neighbors**: Recursively explore the neighbors of the starting node until all reachable nodes have been visited.
+5. **Backtrack**: Backtrack to the previous node until the starting node is reached again.
+6. **Return the result**: Return the order of visited nodes or the path from the starting node to the target node.
+
+### Key Concepts
+
+* **Recursion**: DFS uses recursion to explore the graph depth-first.
+* **Visited nodes**: A set or a boolean array is used to keep track of visited nodes to avoid revisiting them.
+* **Neighbor**: A neighbor of a node is a node that is directly connected to it.
+
+### Time and Space Complexity
+
+* **Time complexity**: O(|E| + |V|), where |E| is the number of edges and |V| is the number of vertices.
+* **Space complexity**: O(|V|), where |V| is the number of vertices.
+
+### Applications
+
+* **Graph traversal**: DFS can be used to traverse a graph or a tree depth-first.
+* **Network topology discovery**: DFS can be used to discover the topology of a network.
+* **Finding connected components**: DFS can be used to find connected components in a graph.
+
+### Implementation
+
+The implementation of DFS can be found in the `Depth-First-Search.py` file in this repository. The implementation uses a recursive approach to perform the DFS.
+
